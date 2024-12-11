@@ -44,7 +44,7 @@ pipeline {
         stage('Fazer Deploy') {
             steps {
                 script {
-                    def appName = 'josereceptormicroservico'
+                    def appName = 'receptormicroservico'
                     def imageTag = "${appName}:${env.BUILD_ID}"
 
                     // Parar e remover o container existente, se houver
