@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     withSonarQubeEnv('SonarQubeServer') {  // 'SonarQubeServer' é o nome da instância configurada no Jenkins
-                        # bat 'mvn clean verify sonar:sonar -Dsonar.projectKey=emissor -Dsonar.projectName=emissor'
+                        // bat 'mvn clean verify sonar:sonar -Dsonar.projectKey=emissor -Dsonar.projectName=emissor'
                     }
                 }
             }
