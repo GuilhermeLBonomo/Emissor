@@ -1,0 +1,11 @@
+# Pra rodar Local no senac...
+services:
+
+  emissor-service:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: emissor-service
+    ports:
+      - "8081:8081"
+
