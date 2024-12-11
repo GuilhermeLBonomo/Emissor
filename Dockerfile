@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: Use uma imagem base do OpenJDK para rodar o aplicativo
-FROM openjdk:20-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Defina o diretório de trabalho dentro do contêiner
 WORKDIR /app
